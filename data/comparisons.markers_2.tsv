@@ -1,0 +1,7 @@
+gene	.y.	group1	group2	p	p.adj	p.format	p.signif	method
+SOX6/TH	exp	Health	LRRK2	0.0096961861667744	0.048	0.0097	**	Wilcoxon
+SOX6/TH	exp	Health	Parkin	0.422750035295465	1	0.4228	ns	Wilcoxon
+SOX6/TH	exp	LRRK2	Parkin	0.00453004168174447	0.027	0.0045	**	Wilcoxon
+CALB1/TH	exp	Health	LRRK2	0.384507649213532	1	0.3845	ns	Wilcoxon
+CALB1/TH	exp	Health	Parkin	0.0592528603297213	0.24	0.0593	ns	Wilcoxon
+CALB1/TH	exp	LRRK2	Parkin	0.44941230080549	1	0.4494	ns	Wilcoxon

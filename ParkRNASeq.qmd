@@ -394,7 +394,11 @@ PERMANOVA
 
 # Differential expression analysis
 <p style="text-align: justify;">
-Differential gene expression analysis was performed to compare the Parkinson's disease (PD) group against healthy controls, as well as in pairwise comparisons between specific mutation groups. The analysis adjusted for potential batch effects from technical replicates and sampling location. Using the DESeq2 package, we implemented a generalized linear model based on the negative binomial distribution. The design formula ~ place + replicate + condition (or mutation) was used to account for technical variability. Linear contrasts were then tested to identify significant differences between groups. For a given contrast, a positive log2 fold change (LFC) indicated higher expression in the first named group (e.g., PD, LRRK2, or Parkin), while a negative value indicated higher expression in the second group (e.g., Healthy controls). We conducted four pairwise comparisons: PD vs. Healthy, LRRK2 vs. Healthy, Parkin vs. Healthy, and LRRK2 vs. Parkin. Genes with an adjusted p-value < 0.05 and an absolute LFC > 1 were considered significantly differentially expressed. The resulting sets of genes were largely consistent within comparisons but were mutually exclusive across them. The global expression profile for each contrast is visualized in a volcano plot (Figures 6-9), which contrasts statistical significance (–log10(adjusted p-value)) against effect size (log2 fold change), underscoring the robustness of the observed differences. The lists of differentially expressed genes for each comparison are provided in Tables 4-11, and the results of a gene intersection analysis are visualized in Figures 10-11. As a result of this analysis, we identified distinct gene signatures for each group. In the PD versus healthy comparison, 144 genes were significantly associated with the PD group and 270 with the healthy control group. For the mutation-specific comparisons, 503 genes were upregulated and 1,141 were downregulated in the LRRK2 group .relative to the healthy control group (the baseline for these comparisons). Similarly, 124 genes were upregulated and 96 were downregulated in the Parkin group. We performed an over-representation analysis (ORA) on the gene signatures from each experimental group using WebGestalt. The detailed results are presented in Tables 13, 21, 32, 36, 45, 51.
+Differential gene expression analysis was performed to compare the Parkinson's disease (PD) group against healthy controls, as well as in pairwise comparisons between specific mutation groups. The analysis adjusted for potential batch effects from technical replicates and sampling location. Using the DESeq2 package, we implemented a generalized linear model based on the negative binomial distribution. The design formula ~ place + replicate + condition (or mutation) was used to account for technical variability. Linear contrasts were then tested to identify significant differences between groups. For a given contrast, a positive log2 fold change (LFC) indicated higher expression in the first named group (e.g., PD, LRRK2, or Parkin), while a negative value indicated higher expression in the second group (e.g., Healthy controls). We conducted four pairwise comparisons: PD vs. Healthy, LRRK2 vs. Healthy, Parkin vs. Healthy, and LRRK2 vs. Parkin. Genes with an adjusted p-value < 0.05 and an absolute LFC > 1 were considered significantly differentially expressed. The resulting sets of genes were largely consistent within comparisons but were mutually exclusive across them. The global expression profile for each contrast is visualized in a volcano plot (Figures 6-9), which contrasts statistical significance (–log10(adjusted p-value)) against effect size (log2 fold change), underscoring the robustness of the observed differences. The lists of differentially expressed genes for each comparison are provided in Tables 4-11, and the results of a gene intersection analysis are visualized in Figures 10-11. As a result of this analysis, we identified distinct gene signatures for each group. In the PD versus healthy comparison, 144 genes were significantly associated with the PD group and 270 with the healthy control group. For the mutation-specific comparisons, 503 genes were upregulated and 1,141 were downregulated in the LRRK2 group relative to the healthy control group (the baseline for these comparisons). Similarly, 124 genes were upregulated and 96 were downregulated in the Parkin group. We performed an over-representation analysis (ORA) on the gene signatures from each experimental group using WebGestalt. The detailed results are presented in Tables 13, 21, 32, 36, 45, 51.
+<p>
+
+<p style="text-align: justify;">
+Based on the over-representation analysis in the context of Parkinson's disease, distinct biological pathways were enriched across the different genetic and control groups. In the general PD group, pathways from the “Neurotransmitter transport” (GO:0006836, GO; enchRatio = 7.11, FDR = 0.12), “Potassium Channels” (R-HSA-1296071, Reactome enchRatio = 10.10, FDR = 0.14), “Potassium ion transport” (GO:0006813, GO; enchRatio = 6.28, FDR = 0.14) were significantly enriched with FDR < 0.25. The healthy control group showed enrichment in developmental and signaling pathways, specifically the “Hippo signaling pathway” (hsa04390, KEGG; enchRatio = 7.49, FDR = 0.001), “WNT signaling pathway” (hsa04310, KEGG; enchRatio = 6.76, FDR = 0.002), “Morphogenesis of a branching structure” (GO:0001763, GO; enchRatio = 5.77, FDR = 0.005), “Cell-cell signaling by WNT” (GO:0198738, GO; enchRatio = 4.21, FDR = 0.001). For the LRRK2-associated groups, up-regulated genes were strongly associated with synaptic function, including “Amine transport” (GO:0015837, GO; enchRatio = 6.10, FDR = 0.00026), “Potassium ion transport” (GO:0006813, GO; enchRatio = 4.45, FDR = 0.00004), “Regulation of trans-synaptic signaling” (GO:0099177, GO; enchRatio = 3.95, FDR = 0.00000002), “Neuroactive ligand-receptor interaction” (hsa04080, KEGG; enchRatio = 3.85, FDR = 0.000006), “Amide transport” (GO:0042886, GO; enchRatio = 3.53, FDR = 0.00008), “Synapse organization” (GO:0050808, GO; enchRatio = 3.30, FDR = 0.00002), “Signal release” (GO:0023061, GO; enchRatio = 3.13, FDR = 0.00005) while down-regulated genes were predominantly linked to extracellular matrix collagen and development: “Extracellular structure organization” (GO:0043062, GO; enchRatio = 3.30, FDR = 0.000003), “External encapsulating structure organization” (GO:0045229. GO; enchRatio = 3.30, FDR = 0.000003), “Extracellular matrix organization” (R-HSA-1474244, Reactome; enchRatio = 3.25, FDR = 0.00001), “Collagen chain trimerization” (enchRatio = 8.57, FDR =0.00001), “Collagen biosynthesis and modifying enzymes” (R-HSA-1650814, Reactome; enchRatio = 6.10, FDR = 0.0001), "Collagen formation" (R-HSA-1474290, Reactome; enchRatio = 5.24, FDR = 0.0001), “Sensory organ morphogenesis” (GO:0090596, GO; enchRatio = 2.96, FDR = 0.0005), “Embryonic organ development” (GO:0048568, GO; enchRatio = 2.40, FDR = 0.001). In contrast, Parkin-associated down-regulated genes were notably enriched "Neuroactive ligand-receptor interaction" (hsa04080, KEGG; enchRatio = 9.81, FDR = 0.00006), "ERK1 and ERK2 cascade" (GO:0070371, GO; enchRatio = 10.20, FDR = 0.0001), "Positive regulation of cytosolic calcium ion concentration" (GO:0007204, GO; enchRatio = 11.83, FDR = 0.01), "GPCR ligand binding" (R-HSA-500792, Reactome; enchRatio = 6.30, FDR = 0.01) whereas up-regulated genes in the Parkin group were "Regulation of Insulin-like Growth Factor (IGF) transport and uptake by Insulin-like Growth Factor Binding Proteins (IGFBPs)" (R-HSA-381426, Reactome; enchRatio = 11.49, FDR = 0.19), "Positive regulation of cytokine production" (GO:0001819, GO; enchRatio = 5.37, FDR = 0.19) with FDR threshold < 0.25.
 <p>
 
 <p style="text-align: justify;">
@@ -482,8 +486,8 @@ VolcanoPlot <- EnhancedVolcano(deg.add,
 download_this(
   VolcanoPlot,
   output_name = "VolcanoPlot",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
@@ -572,8 +576,8 @@ VolcanoPlotLRRK2 <- EnhancedVolcano(degLRKK2.add,
 download_this(
   VolcanoPlotLRRK2,
   output_name = "VolcanoPlotLRRK2",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
@@ -662,8 +666,8 @@ VolcanoPlotParkin <- EnhancedVolcano(degParkin.add,
 download_this(
   VolcanoPlotParkin,
   output_name = "VolcanoPlotParkin",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
@@ -752,8 +756,8 @@ VolcanoPlotB <- EnhancedVolcano(degB.add,
 download_this(
   VolcanoPlotB,
   output_name = "VolcanoPlotB",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
@@ -848,14 +852,14 @@ DEG_consistent_upset <- upset(fromList(consistent_DEG),
       line.size = 1
 )
 
-# pdf("figures/DEG_consistent_upset.pdf", width = 5, height = 5)
+# pdf("figures/DEG_consistent_upset.pdf", width = 4, height = 4)
 # DEG_consistent_upset
 # dev.off()
 ```
 
 [Figure 11](figures/DEG_consistent_upset.pdf)
 
-```{r fig.width=5, fig.height=5}
+```{r fig.width=4, fig.height=4}
 #| echo: false
 #| message: false
 #| warning: false
@@ -869,6 +873,10 @@ DEG_consistent_upset
 consistent_PD <-  c(unique_intersections$`PD_ALL & PD_LRKK2 & PD_Parkin`, unique_intersections$`PD_LRKK2 & PD_Parkin`)
 
 consistent_PD.df <- ensbl2geneid[ensbl2geneid$gene_id %in% consistent_PD,]
+rownames(consistent_PD.df) <- NULL
+
+consistent_PD.df <- merge(consistent_PD.df, PD, by = 1)
+consistent_PD.df <- consistent_PD.df[order(consistent_PD.df$log2FoldChange, decreasing = T),]
 rownames(consistent_PD.df) <- NULL
 ```
 
@@ -1347,15 +1355,15 @@ datatable(gseaDEG.df_4[c(2:9)],
               buttons = c('csv', 'excel')))
 ```
 
-```{r fig.width=6, fig.height=6}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false
 download_this(
   common_gsea_1,
   output_name = "common_gsea_1",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
@@ -1368,15 +1376,15 @@ download_this(
 common_gsea_1
 ```
 
-```{r fig.width=6, fig.height=6}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false
 download_this(
   common_gsea_2,
   output_name = "common_gsea_2",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
@@ -1389,15 +1397,15 @@ download_this(
 common_gsea_2
 ```
 
-```{r fig.width=6, fig.height=6}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false
 download_this(
   common_gsea_3,
   output_name = "common_gsea_3",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
@@ -1769,8 +1777,8 @@ datatable(gseaDEG.lrrk2.df_4[c(2:9)],
 download_this(
   lrrk2_gsea_1,
   output_name = "lrrk2_gsea_1",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
@@ -1790,8 +1798,8 @@ lrrk2_gsea_1
 download_this(
   lrrk2_gsea_2,
   output_name = "lrrk2_gsea_2",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
@@ -1811,8 +1819,8 @@ lrrk2_gsea_2
 download_this(
   lrrk2_gsea_3,
   output_name = "lrrk2_gsea_3",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
@@ -1970,7 +1978,7 @@ datatable(Parkin_down_enrichment_results_wg,
 
 ![Figure 53. MCL clusterization results with inflation = 1.1, min confidence = 0.4.](figures/STRING/Parkin_down/clusterisation.png)
 
-##### Retina cluster
+##### GPCR cluster
 [Figure 54](figures/STRING/Parkin_down/string_GPCR.png)
 
 [Figure 54 - STRING website](https://version-12-0.string-db.org/cgi/network?networkId=bodcxix6qARf)
@@ -2108,20 +2116,20 @@ datatable(gseaDEG.Parkin.df_4[c(2:9)],
               buttons = c('csv', 'excel')))
 ```
 
-```{r fig.width=6, fig.height=4.5}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false
 download_this(
   gsea_3,
   output_name = "DEGgsea_3",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
 
-```{r fig.width=6, fig.height=4.5}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false

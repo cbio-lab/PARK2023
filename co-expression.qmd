@@ -98,11 +98,27 @@ ddsHTSeq <- ddsHTSeq[keep,]
 
 # Co-expression analysis
 <p style="text-align: justify;">
-To identify functionally coordinated gene clusters and uncover potential regulatory mechanisms in LRRK2 and Parkin mutation, we performed co-expression network analysis. Experimental place-associated batch effects were mitigated using the removeBatchEffect function from the limma package prior to analysis. While PCA on batch-corrected expression data did not enhance visual separation between experimental groups compared to raw data (Figures 104-105), PERMANOVA confirmed that the batch correction effectively removed variance associated with experimental lab (R² = 0.01, p = 0.98) with save the dispersion of target variable (R² = 0.12, p = 0.0003).
+To identify functionally coordinated gene clusters and uncover potential regulatory mechanisms in LRRK2 and Parkin mutation, we performed co-expression network analysis. Experimental place-associated batch effects were mitigated using the removeBatchEffect function from the limma package prior to analysis. While PCA on batch-corrected expression data did not enhance visual separation between experimental groups compared to raw data (Figures 104-105), PERMANOVA confirmed that the batch correction effectively removed variance associated with experimental lab (R² = 0.01, p = 0.98) with save the dispersion of target variable (R² = 0.12, p = 0.0003). Using the BioNERO package, we identified co-expressed gene modules exhibiting distinct expression patterns, including modules enriched in the Parkin group in comparison to Healthy group (Tables 23–24; visualized in Figures 26-30). Within these co-expression networks, hub genes (central nodes) were prioritized as functionally important and potential regulatory candidates (Tables 25–26, Figure 31).
+<p>
 
-Using the BioNERO package, we identified co-expressed gene modules exhibiting distinct expression patterns, including modules enriched in the Parkin group in comparison to Healthy group (Tables 23–24; visualized in Figures 26-30).
+<p style="text-align: justify;">
+skyblue3-pearson shows statistically significant enrichment in molecular pathways such as Extracellular matrix organization (R-HSA-1474244; ER = 6.12, FDR = 0.09), actin filament bundle (GO:0032432; ER = 12.07, FDR = 0.09), Proteoglycan biosynthesis (WP4784; ER = 38.22, FDR = 0.09), extracellular matrix structural constituent (GO:0005201; ER = 8.39, FDR = 0.09), Non-integrin membrane-ECM interactions (R-HSA-3000171; ER = 15.55, FDR = 0.12), cell growth (GO:0016049; ER = 4.25, FDR = 0.18), cell-cell junction organization (GO:0045216; ER = 6.37, FDR = 0.18), endoplasmic reticulum lumen (GO:0005788; ER = 5.15, FDR = 0.18), Mesodermal commitment pathway (WP2857; ER = 7.75, FDR = 0.18), endoderm development (GO:0007492; ER = 10.79, FDR = 0.18).
+<p>
 
-Within these co-expression networks, hub genes (central nodes) were prioritized as functionally important and potential regulatory candidates (Tables 25–26, Figure 31).
+<p style="text-align: justify;">
+black shows statistically significant enrichment in molecular pathways such as positive regulation of cell projection organization (GO:0031346; ER = 5.79, FDR = 0.04), Axon guidance (R-HSA-422475; ER = 4.50, FDR = 0.04), Splicing factor NOVA regulated synaptic proteins (WP4148; ER = 21.57, FDR = 0.04), Sema3A PAK dependent Axon repulsion (R-HSA-399954; ER = 42.46, FDR = 0.04), Nervous system development (R-HSA-9675108; ER = 4.31, FDR = 0.04), TGF beta receptor signaling in skeletal dysplasias (WP4816; ER = 15.35, FDR = 0.09), Axon guidance (hsa04360; ER = 7.47, FDR = 0.09), regulation of neuron projection development (GO:0010975; ER = 4.53, FDR = 0.09), Neurotrophin signaling pathway (hsa04722; ER = 9.51, FDR = 0.09), Activated NTRK3 signals through PI3K (R-HSA-9603381; ER = 75.48, FDR = 0.13).
+<p>
+
+<p style="text-align: justify;">
+grey shows statistically significant enrichment in molecular pathways such as cell junction assembly (GO:0034329; ER = 3.17, FDR = 0.0000039), cell-substrate junction (GO:0030055; ER = 3.17, FDR = 0.0000039), adherens junction (GO:0005912; ER = 4.62, FDR = 0.0000039), actin binding (GO:0003779; ER = 3.09, FDR = 0.0000068), establishment or maintenance of cell polarity (GO:0007163; ER = 3.82, FDR = 0.000076), regulation of actin filament-based process (GO:0032970; ER = 3.01, FDR = 0.00018), Nervous system development (R-HSA-9675108; ER = 2.51, FDR = 0.00019), cell-substrate junction organization (GO:0150115; ER = 5.33, FDR = 0.00020), neuron projection guidance (GO:0097485; ER = 3.45, FDR = 0.00046), cell leading edge (GO:0031252; ER = 2.67, FDR = 0.00078).
+<p>
+
+<p style="text-align: justify;">
+skyblue3-spearman shows statistically significant enrichment in molecular pathways such as Other semaphorin interactions (R-HSA-416700; ER = 40.50, FDR = 0.0072), Elastic fibre formation (R-HSA-1566948; ER = 21.86, FDR = 0.0072), Nervous system development (R-HSA-9675108; ER = 4.33, FDR = 0.013), Semaphorin interactions (R-HSA-373755; ER = 14.80, FDR = 0.025), Axon guidance (R-HSA-422475; ER = 4.17, FDR = 0.026), regulation of cellular response to growth factor stimulus (GO:0090287; ER = 5.55, FDR = 0.026), Molecules associated with elastic fibres (R-HSA-2129379; ER = 20.80, FDR = 0.026), Axon guidance (hsa04360; ER = 7.40, FDR = 0.026), TGF-beta receptor signaling activates SMADs (R-HSA-2173789; ER = 16.37, FDR = 0.047), Mechanoregulation and pathology of YAP TAZ via Hippo and non Hippo mechanisms (WP4534; ER = 16.37, FDR = 0.047).
+<p>
+
+<p style="text-align: justify;">
+ORA analysis on all genes included to all modules shows statistically significant enrichment in molecular pathways such as cell junction assembly (GO:0034329; ER = 3.08, FDR = 0.00000002), actin binding (GO:0003779; ER = 3.05, FDR = 0.000000041), cell-substrate junction (GO:0030055; ER = 2.97, FDR = 0.00000010), axonogenesis (GO:0007409; ER = 2.90, FDR = 0.00000010), Nervous system development (R-HSA-9675108; ER = 2.62, FDR = 0.00000015), neuron projection guidance (GO:0097485; ER = 3.58, FDR = 0.0000011), adherens junction (GO:0005912; ER = 3.97, FDR = 0.0000013), Axon guidance (R-HSA-422475; ER = 2.53, FDR = 0.0000015), establishment or maintenance of cell polarity (GO:0007163; ER = 3.53, FDR = 0.0000035), VEGFA VEGFR2 signaling (WP3888; ER = 2.71, FDR = 0.0000035).
 <p>
 
 ## Batch correction
@@ -539,7 +555,7 @@ grey.p.mut
 
 ```{r}
 #| echo: false
-lmer_grey_p <- glm(MEblack ~ mutation, data = ME.pearson.m)
+lmer_grey_p <- glm(MEgrey ~ mutation, data = ME.pearson.m)
 summary(glht(lmer_grey_p, linfct = mcp(mutation = "Tukey")), test = adjusted("fdr"))
 ```
 
@@ -563,7 +579,7 @@ grey.p.dis
 
 ```{r}
 #| echo: false
-lmer_grey_c <- glm(MEblack ~ condition, data = ME.pearson.m)
+lmer_grey_c <- glm(MEgrey ~ condition, data = ME.pearson.m)
 summary(glht(lmer_grey_c, linfct = mcp(condition = "Tukey")), test = adjusted("fdr"))
 ```
 
@@ -588,7 +604,7 @@ skyblue3.s.mut
 
 ```{r}
 #| echo: false
-lmer_skyblue3_p_sp <- glm(MEblack ~ mutation, data = ME.spearman.m)
+lmer_skyblue3_p_sp <- glm(MEskyblue3 ~ mutation, data = ME.spearman.m)
 summary(glht(lmer_skyblue3_p_sp, linfct = mcp(mutation = "Tukey")), test = adjusted("fdr"))
 ```
 
@@ -612,7 +628,7 @@ skyblue3.s.dis
 
 ```{r}
 #| echo: false
-lmer_skyblue3_s_sp <- glm(MEblack ~ condition, data = ME.spearman.m)
+lmer_skyblue3_s_sp <- glm(MEskyblue3 ~ condition, data = ME.spearman.m)
 summary(glht(lmer_skyblue3_s_sp, linfct = mcp(condition = "Tukey")), test = adjusted("fdr"))
 ```
 
@@ -1514,20 +1530,20 @@ datatable(gseaDEG_4.df[c(2:9)],
               buttons = c('csv', 'excel')))
 ```
 
-```{r fig.width=6, fig.height=4.5}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false
 download_this(
   gsea_ECM,
   output_name = "gsea_ECM_coexp",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
 
-```{r fig.width=6, fig.height=4.5}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false
@@ -1535,20 +1551,20 @@ download_this(
 gsea_ECM
 ```
 
-```{r fig.width=6, fig.height=4.5}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false
 download_this(
   gsea_ERBB,
   output_name = "gsea_ERBB_coexp",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
 
-```{r fig.width=6, fig.height=4.5}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false
@@ -1556,20 +1572,20 @@ download_this(
 gsea_ERBB
 ```
 
-```{r fig.width=6, fig.height=4.5}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false
 download_this(
   gsea_cellular,
   output_name = "gsea_cellular_coexp",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
 
-```{r fig.width=6, fig.height=4.5}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false
@@ -1577,20 +1593,20 @@ download_this(
 gsea_cellular
 ```
 
-```{r fig.width=6, fig.height=4.5}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false
 download_this(
   gsea_phosphatidylinositol,
   output_name = "gsea_phosphatidylinositol_coexp",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
 
-```{r fig.width=6, fig.height=4.5}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false
@@ -1598,20 +1614,20 @@ download_this(
 gsea_phosphatidylinositol 
 ```
 
-```{r fig.width=6, fig.height=4.5}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false
 download_this(
   gsea_histone,
   output_name = "gsea_histone_coexp",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
 
-```{r fig.width=6, fig.height=4.5}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false
@@ -1619,20 +1635,20 @@ download_this(
 gsea_histone
 ```
 
-```{r fig.width=6, fig.height=4.5}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false
 download_this(
   gsea_semaphorin,
   output_name = "gsea_semaphorin_coexp",
-  output_extension = ".pdf",
-  button_label = "PDF",
+  output_extension = ".svg",
+  button_label = "SVG",
   button_type = "primary"
 )
 ```
 
-```{r fig.width=6, fig.height=4.5}
+```{r fig.width=6.5, fig.height=4.5}
 #| echo: false
 #| message: false
 #| warning: false
@@ -1838,6 +1854,7 @@ PI3K_boxplot <- ggplot(sample_acts_mat_df, aes(PI3K, mutation, col = mutation))+
       stat_halfeye()+
       xlab("Activity score")+
       ylab("Mutation")+
+      ggtitle("PI3K")+
       theme_pubr()+
       theme(legend.position = "none")+
       scale_color_brewer(palette = "Set1")
@@ -1846,6 +1863,7 @@ Trail_boxplot <- ggplot(sample_acts_mat_df, aes(Trail, mutation, col = mutation)
       stat_halfeye()+
       xlab("Activity score")+
       ylab("Mutation")+
+      ggtitle("Trail")+
       theme_pubr()+
       theme(legend.position = "none")+
       scale_color_brewer(palette = "Set1")
@@ -1854,6 +1872,7 @@ NFkB_boxplot <- ggplot(sample_acts_mat_df, aes(NFkB, mutation, col = mutation))+
       stat_halfeye()+
       xlab("Activity score")+
       ylab("Mutation")+
+      ggtitle("NFkB")+
       theme_pubr()+
       theme(legend.position = "none")+
       scale_color_brewer(palette = "Set1")
@@ -1862,6 +1881,7 @@ TNFa_boxplot <- ggplot(sample_acts_mat_df, aes(TNFa, mutation, col = mutation))+
       stat_halfeye()+
       xlab("Activity score")+
       ylab("Mutation")+
+      ggtitle("TNFa")+
       theme_pubr()+
       theme(legend.position = "none")+
       scale_color_brewer(palette = "Set1")
@@ -1870,6 +1890,7 @@ MAPK_boxplot <- ggplot(sample_acts_mat_df, aes(MAPK, mutation, col = mutation))+
       stat_halfeye()+
       xlab("Activity score")+
       ylab("Mutation")+
+      ggtitle("MAPK")+
       theme_pubr()+
       theme(legend.position = "none")+
       scale_color_brewer(palette = "Set1")
@@ -1878,6 +1899,7 @@ Hypoxia_boxplot <- ggplot(sample_acts_mat_df, aes(Hypoxia, mutation, col = mutat
       stat_halfeye()+
       xlab("Activity score")+
       ylab("Mutation")+
+      ggtitle("Hypoxia")+
       theme_pubr()+
       theme(legend.position = "none")+
       scale_color_brewer(palette = "Set1")
@@ -1886,6 +1908,7 @@ p53_boxplot <- ggplot(sample_acts_mat_df, aes(p53, mutation, col = mutation))+
       stat_halfeye()+
       xlab("Activity score")+
       ylab("Mutation")+
+      ggtitle("p53")+
       theme_pubr()+
       theme(legend.position = "none")+
       scale_color_brewer(palette = "Set1")
@@ -1894,6 +1917,7 @@ JAK_STAT_boxplot <- ggplot(sample_acts_mat_df, aes(`JAK-STAT`, mutation, col = m
       stat_halfeye()+
       xlab("Activity score")+
       ylab("Mutation")+
+      ggtitle("JAK-STAT")+
       theme_pubr()+
       theme(legend.position = "none")+
       scale_color_brewer(palette = "Set1")
@@ -1902,6 +1926,7 @@ WNT_boxplot <- ggplot(sample_acts_mat_df, aes(WNT, mutation, col = mutation))+
       stat_halfeye()+
       xlab("Activity score")+
       ylab("Mutation")+
+      ggtitle("WNT")+
       theme_pubr()+
       theme(legend.position = "none")+
       scale_color_brewer(palette = "Set1")
@@ -1984,7 +2009,7 @@ summary(glht(NFkB_mmodel, linfct = mcp(mutation = "Tukey")), test = adjusted("fd
 #| echo: false
 download_this(
   TNFa_boxplot,
-  output_name = "NFkB_boxplot",
+  output_name = "TNFa_boxplot",
   output_extension = ".pdf",
   button_label = "PDF",
   button_type = "primary"

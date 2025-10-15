@@ -1219,7 +1219,7 @@ PDM_plot
 #| warning: false
 download_this(
   axon_plot,
-  output_name = "PDM_plot",
+  output_name = "axon_plot",
   output_extension = ".pdf",
   button_label = "PDF",
   button_type = "primary"
