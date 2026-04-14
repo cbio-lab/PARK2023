@@ -1,8 +1,8 @@
 # Convergent transcriptomic signature in iPSC-dopaminergic neurons of hereditary Parkinson’s disease
 
-This repository serves as the **entry point** to the full computational analysis accompanying the manuscript:
-
 ![](https://github.com/cbio-lab/PARK2023/blob/main/figures/Figure_1.png)
+
+This repository serves as the **entry point** to the full computational analysis accompanying the manuscript:
 
 > *Convergent transcriptomic signature in iPSC-dopaminergic neurons of hereditary Parkinson’s disease*  
 > Kopylova IV, Ivanov AB, Eidelman LR, Zaitseva EN, Kulikova ED, Grehnyov DA, Bogomazova AN, Vigont VA, Kaznacheyeva EV, Lagarkova MA, Lebedeva OS, Olekhnovich EI  
