@@ -13,10 +13,10 @@ All custom code and processed data are organised into four independent but compl
 
 | Repository | Description | Quarto report |
 |------------|-------------|---------------|
-| [**ParkRNASeq**](https://github.com/cbio-lab/ParkRNASeq) | Differential expression, STRING networks, PPI clustering and validation | [`Quarto report`](http://download.ripcm.com/PARK2023/ParkRNASeq/ParkRNASeq.html) |
-| [**ParkNeuroSignatures**](https://github.com/cbio-lab/ParkNeuroSignatures) | Derivation of neuronal / progenitor gene signatures from public data and GSEA in PD neurons | [`Quarto report`](http://download.ripcm.com/PARK2023/ParkNeuroSignatures/ParkNeuroSignatures.html) |
-| [**ParkGSEA**](https://github.com/cbio-lab/ParkGSEA) | Classical GSEA using Hallmark, GO, KEGG and Reactome | [`Quarto report`](http://download.ripcm.com/PARK2023/ParkGSEA/gsea.html) |
-| [**ParkCoexp**](https://github.com/cbio-lab/ParkCoexp) | Weighted gene co‑expression networks (BioNERO) and pathway activity (PROGENy) | [`Quarto report`](http://download.ripcm.com/PARK2023/ParkCoexp/co-expression.html) |
+| [**ParkRNASeq**](https://github.com/cbio-lab/ParkRNASeq) | Differential expression, STRING networks, PPI clustering and validation | [`Report`](http://download.ripcm.com/PARK2023/ParkRNASeq/ParkRNASeq.html) |
+| [**ParkNeuroSignatures**](https://github.com/cbio-lab/ParkNeuroSignatures) | Derivation of neuronal / progenitor gene signatures from public data and GSEA in PD neurons | [`Report`](http://download.ripcm.com/PARK2023/ParkNeuroSignatures/ParkNeuroSignatures.html) |
+| [**ParkGSEA**](https://github.com/cbio-lab/ParkGSEA) | Classical GSEA using Hallmark, GO, KEGG and Reactome | [`Report`](http://download.ripcm.com/PARK2023/ParkGSEA/gsea.html) |
+| [**ParkCoexp**](https://github.com/cbio-lab/ParkCoexp) | Weighted gene co‑expression networks (BioNERO) and pathway activity (PROGENy) | [`Report`](http://download.ripcm.com/PARK2023/ParkCoexp/co-expression.html) |
 
 Each repository contains its own `README.md`, R‑based Quarto report, required R packages, and a `data/` folder with processed input files (or instructions to obtain raw data from NCBI BioProject **PRJNA1346308**).
 
