@@ -13,10 +13,10 @@ All custom code and processed data are organised into four independent but compl
 
 | Repository | Description | Quarto report |
 |------------|-------------|---------------|
-| [**ParkRNASeq**](https://github.com/cbio-lab/ParkRNASeq) | Differential expression, STRING networks, PPI clustering and validation | [`ParkRNASeq.qmd`](https://github.com/cbio-lab/ParkRNASeq/blob/main/ParkRNASeq.qmd) |
-| [**ParkNeuroSignatures**](https://github.com/cbio-lab/ParkNeuroSignatures) | Derivation of neuronal / progenitor gene signatures from public data and GSEA in PD neurons | [`ParkNeuroSignatures.qmd`](https://github.com/cbio-lab/ParkNeuroSignatures/blob/main/ParkNeuroSignatures.qmd) |
-| [**ParkGSEA**](https://github.com/cbio-lab/ParkGSEA) | Classical GSEA using Hallmark, GO, KEGG and Reactome | [`ParkGSEA.qmd`](https://github.com/cbio-lab/ParkGSEA/blob/main/ParkGSEA.qmd) |
-| [**ParkCoexp**](https://github.com/cbio-lab/ParkCoexp) | Weighted gene co‑expression networks (BioNERO) and pathway activity (PROGENy) | [`ParkCoexp.qmd`](https://github.com/cbio-lab/ParkCoexp/blob/main/ParkCoexp.qmd) |
+| [**ParkRNASeq**](https://github.com/cbio-lab/ParkRNASeq) | Differential expression, STRING networks, PPI clustering and validation | [`Quarto report`](http://download.ripcm.com/PARK2023/ParkRNASeq/ParkRNASeq.html) |
+| [**ParkNeuroSignatures**](https://github.com/cbio-lab/ParkNeuroSignatures) | Derivation of neuronal / progenitor gene signatures from public data and GSEA in PD neurons | [`Quarto report`](http://download.ripcm.com/PARK2023/ParkNeuroSignatures/ParkNeuroSignatures.html) |
+| [**ParkGSEA**](https://github.com/cbio-lab/ParkGSEA) | Classical GSEA using Hallmark, GO, KEGG and Reactome | [`Quarto report`](http://download.ripcm.com/PARK2023/ParkGSEA/gsea.html) |
+| [**ParkCoexp**](https://github.com/cbio-lab/ParkCoexp) | Weighted gene co‑expression networks (BioNERO) and pathway activity (PROGENy) | [`Quarto report`](http://download.ripcm.com/PARK2023/ParkCoexp/co-expression.html) |
 
 Each repository contains its own `README.md`, R‑based Quarto report, required R packages, and a `data/` folder with processed input files (or instructions to obtain raw data from NCBI BioProject **PRJNA1346308**).
 
@@ -29,7 +29,7 @@ Each repository contains its own `README.md`, R‑based Quarto report, required 
 
 - R (≥4.2)
 - Required R packages are listed in each sub‑repository’s `README.md`.  
-  Typical packages include `DESeq2`, `tidyverse`, `clusterProfiler`, `BioNERO`, `decoupleR`, `STRINGdb`, `GseaVis`, etc.
+- Packages: `tidyverse`, `ggplot2`, `ggpubr`, `ggdist`, `RColorBrewer`, `rcartocolor`, `lmerTest`, `broom.mixed`, `vegan`, `multcomp`, `pairwiseAdonis`, `DESeq2`, `clusterProfiler`, `GseaVis`, `EnhancedVolcano`, `factoextra`, `UpSetR`, `DT`, `downloadthis`, `purrr`, `ggfortify`, `WebGestaltR`, `msigdbr`, `org.Hs.eg.db`, `ReactomePA`, `decoupleR`, `dplyr`, `tibble`, `tidyr`, `stringr`, `pheatmap`, `limma`, `BioNERO`
 
 ## How to reproduce the analysis
 
