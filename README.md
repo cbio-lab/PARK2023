@@ -1,6 +1,10 @@
 # Convergent transcriptomic signature in iPSC-dopaminergic neurons of hereditary Parkinson’s disease
 
-![License](https://img.shields.io/badge/License-MIT-green.svg) ![R](https://img.shields.io/badge/R-%3E%3D4.2-blue) ![Quarto Render](https://github.com/cbio-lab/ParkRNASeq/actions/workflows/render.yml/badge.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg) ![R](https://img.shields.io/badge/R-%3E%3D4.2-blue) 
+
+![Platform](https://img.shields.io/badge/Platform-iPSC--derived%20neurons-blue)
+
+![Disease](https://img.shields.io/badge/Disease-Parkinson's%20disease-orange)
 
 ![](https://github.com/cbio-lab/PARK2023/blob/main/figures/Figure_1.png)
 *Scheme of differentiation of iPSCs into DAns and characteristics of cells used for transcriptome analysis. The experimental design included the production of iPSCs, their differentiation, and subsequent characterization and transcriptome analysis. Images adapted from Servier Medical Art (https://smart.servier.com), licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).*
