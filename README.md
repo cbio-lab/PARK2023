@@ -38,7 +38,7 @@ Each repository contains its own `README.md`, R‑based Quarto report, required 
 
 ## How to reproduce the analysis
 
-1. Clone the four sub‑repositories (or the entire project using `git clone --recursive` if you set up submodules).
+1. Clone the four sub‑repositories.
 2. Follow the instructions in each `README.md` to install R packages and obtain necessary data.
 3. Render the Quarto (`.qmd`) files in RStudio, or run `quarto render` from the command line.
 
