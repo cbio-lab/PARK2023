@@ -9,7 +9,7 @@ This repository serves as the **entry point** to the full computational analysis
 
 > *Convergent transcriptomic signature in iPSC-dopaminergic neurons of hereditary Parkinson’s disease*  
 > Kopylova IV, Ivanov AB, Eidelman LR, Zaitseva EN, Kulikova ED, Grehnyov DA, Bogomazova AN, Vigont VA, Kaznacheyeva EV, Lagarkova MA, Lebedeva OS, Olekhnovich EI  
-> *Life Science Alliance*, 2026 (in press)  
+> *Life Science Alliance*, 9.7 (2026): e202503551. 
 > DOI: [10.26508/lsa.202503551](https://doi.org/10.26508/lsa.202503551)
 
 All custom code and processed data are organised into four independent but complementary repositories, each dedicated to a specific analytical module.
