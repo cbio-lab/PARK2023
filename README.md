@@ -44,7 +44,7 @@ Each repository contains its own `README.md`, R‑based Quarto report, required 
 
 ## Citation
 
-If you use any part of this code or data in your work, please cite the original article (see above) and optionally the Zenodo archive of the specific repository.
+If you use any part of this code or data in your work, please cite the original article (see above).
 
 ## License
 
